@@ -19,7 +19,7 @@ md5sums=('398cbc1139d53dbf65c00010bf2297fb')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
-  make
+  make CFLAGS="-fcommon"
 }
 
 package() {
